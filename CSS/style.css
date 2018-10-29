@@ -4,6 +4,7 @@ body *{
 	text-decoration: none;
 }
 
+/*--------------Navigation-------------------*/
 
 .my-header nav{
 	background: rgba(0,0,0,0.3) !important;
@@ -13,10 +14,16 @@ body *{
 	width: 100%;
 	z-index: 20;
 }
+nav a{
+  font-size: 1.2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
 .my-header .my-navbar li,a,span{
 	color: white !important;
 }
+
+/*---------------Showcase-----------------*/
 #showcase div{
   min-height: 600px;
   max-height: 600px;
@@ -25,31 +32,39 @@ body *{
 #showcase h2{
   color:white;
   text-shadow: 1px 1px #DC3A09;
+  font-size: 6em;
+}
+
+@media only screen and (max-width: 1024px) {
+ #showcase h2{
+  font-size: 5em;
+ }
+ }
+@media only screen and (max-width: 800px) {
+ #showcase h2{
+  font-size: 4em;
+ }
+}
+@media only screen and (max-width: 480px) {
+ #showcase h2{
+  padding-top: 8%;
+  font-size: 3em;
+ }
 }
 .social i{
   color:#007BFF;
 }
 
 
-  @media (max-width: 1024px) { 
-    #showcase h2{
-  font-size: 4em;
-  }
-  }
 
 
-
-
-
+/*--------Profile--------------*/
 
 #about-me h1{
 	font-size: 2em !important;
 
 }
-nav a{
-	font-size: 1.2em;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
+
 #about-me{
 	position: relative;
 	top: -80px;
@@ -60,12 +75,17 @@ nav a{
 	font-family: 'Rajdhani', sans-serif;
 	font-size: 1em;
 }
+#about-me strong{
+  color:#dc3a09 !important;
+}
 .profile img{
 	width:200px;
 	position: relative;
 	top:-100px;
 
 }
+
+/*----------Skills------------*/
 #skills{
 	background-color:#dc3a09;
 	color:white;
