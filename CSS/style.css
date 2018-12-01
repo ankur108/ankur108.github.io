@@ -191,7 +191,10 @@ nav a{
 #almamater img{
   border-radius: 1%;
 }
-
+.projects img{  
+  margin:0; 
+  height: auto; 
+}
 /*-----------------Connect----------*/
 
 #connect{
