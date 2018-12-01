@@ -1,3 +1,5 @@
+
+
 /*-----------------Global CSS-----------------*/
 body *{
 	font-family: 'Rajdhani', sans-serif;
@@ -21,6 +23,36 @@ nav a{
 
 .my-header .my-navbar li,a,span{
 	color: white !important;
+}
+
+/* Underline From Left */
+.underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #DC3A09;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline:hover:before, .underline:focus:before, .underline:active:before {
+  right: 0;
 }
 
 /*---------------Showcase-----------------*/
@@ -156,47 +188,16 @@ nav a{
 
 /*-----------------Alma-Mater-----------*/
 
-#almamater{
- background-color:;
-}
 #almamater img{
   border-radius: 1%;
 }
 
+/*-----------------Connect----------*/
 
-
-#portfolio{
-	background-color:#dc3a09;
-	color:white;
+#connect{
+  background-color: #DC3A09;
+  padding: 20px 0px 20px 0px;
 }
-.projects{
-	text-align: center;
-}
-.projects img{
-	margin:0;
-	height: auto;
-}
-
-/*********************** Demo - 9 *******************/
-.box9{background:#000;text-align:center;position:relative}
-.box9 img{width:100%;height:auto}
-.box9:hover img{opacity:.5}
-.box9 .box-content{padding:30px 10px 30px 0;background:rgba(0,0,0,.65);position:absolute;top:0;left:0;bottom:0;right:0;opacity:0}
-.box9:hover .box-content{top:10px;left:10px;bottom:10px;right:10px;opacity:1}
-.box9 .title{font-weight:700;color:#fff;line-height:17px;margin:5px 0;position:absolute;bottom:55%}
-.box10 .icon li a,.box9 .icon li a{line-height:35px;border-radius:50%}
-.box9 .icon{list-style:none;padding:0;margin:0;position:absolute;top:50%}
-.box9 .icon li{display:inline-block;opacity:0;transform:translateY(40px)}
-.box9:hover .icon li{opacity:1;transform:translateY(0)}
-.box9:hover .icon li:first-child{transition-delay:.1s}
-.box9:hover .icon li:nth-child(2){transition-delay:.2s}
-.box9 .icon li a{display:block;width:35px;height:35px;background:#f39c12;font-size:20px;color:#000;margin-right:5px;transition:all .35s ease 0s}
-.box9 .icon a:hover{background:#fff}
-.box8 .icon li a,.box9 .box-content,.box9 .icon li,.box9 img{transition:all .35s ease 0s}
-.box9 .icon,.box9 .title{width:100%;font-size:22px}
-@media only screen and (max-width:990px){.box9{margin-bottom:20px}
-}
-
 .contact-button{
   background:#ffdc00;
   color:#fff;
@@ -235,8 +236,30 @@ nav a{
   width:100%;
   transition:800ms ease all;
 }
-.arrow i{
-	padding: 10px;
-}
+
+/*-----------------Recent Projects------------------*/
+
+.box9{background:#000;text-align:center;position:relative;margin:0 -15px 0 -15px;}
+.box9 img{width:100%;height:250px;}
+.box9:hover img{opacity:.5;}
+.box9 .box-content{padding:30px 10px 30px 0;background:rgba(0,0,0,.65);position:absolute;top:0;left:0;bottom:0;right:0;opacity:0}
+.box9:hover .box-content{top:10px;left:10px;bottom:10px;right:10px;opacity:1}
+.box9 .title{font-weight:700;color:#fff;line-height:17px;margin:5px 0;position:absolute;bottom:55%}
+.box10 .icon li a,.box9 .icon li a{line-height:35px;border-radius:50%}
+.box9 .icon{list-style:none;padding:0;margin:0;position:absolute;top:50%}
+.box9 .icon li{display:inline-block;opacity:0;transform:translateY(40px)}
+.box9:hover .icon li{opacity:1;transform:translateY(0)}
+.box9:hover .icon li:first-child{transition-delay:.1s}
+.box9:hover .icon li:nth-child(2){transition-delay:.2s}
+.box9 .icon li a{display:block;width:35px;height:35px;background:none;font-size:20px;color:#000;margin-right:5px;transition:all .35s ease 0s}
+.box9 .icon a:hover{background:none}
+.box8 .icon li a,.box9 .box-content,.box9 .icon li,.box9 img{transition:all .35s ease 0s}
+.box9 .icon,.box9 .title{width:100%;font-size:22px}
+
+/*-----------------Get in Touch------------------*/
+
+
+
+
 
 
